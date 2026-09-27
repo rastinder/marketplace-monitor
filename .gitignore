@@ -1,0 +1,19 @@
+# runtime data - never commit (screenshots of a real account, seller contacts,
+# dedup databases, logs)
+data/
+
+# deepcraft working memory
+.swarm/
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# secrets / local config
+.env
+*.key
+*.pem
+.secrets/

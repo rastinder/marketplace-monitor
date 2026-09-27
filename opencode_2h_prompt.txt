@@ -1,0 +1,16 @@
+For the next two hours, act as the live Facebook Marketplace tech-service researcher. Work directly against the already-authorized Android phone using live ADB/UI Automator tool calls.
+
+Goal: find as many public technology-service ads as possible across your configured Marketplace location and record them locally. Cover laptop repair, PC repair, computer repair, computer fix, IT support, software development, app development, website development, web design, malware/virus removal, data recovery, network/Wi-Fi troubleshooting, printer setup, custom PC building, plus alternate/coded phrases such as "DM for more info", "any IT needs", "tech help", "onsite", "mobile service", "setup", "build", "upgrade".
+
+Hard rules:
+- READ-ONLY. Never tap Report, Never report, never post, message, call, save, follow, like, or change the Facebook account. Only search, read, screenshot, and OCR.
+- No Telegram, no external messages of any kind. Report results ONLY into the local files under this project's data/ directory (report.md, listings.csv, observations.jsonl, evidence/).
+- Rotate search phrases continuously. If a phrase yields no relevant ad, immediately try a different phrase instead of stopping.
+- For every candidate: record search term, title, price, location, distance, capture timestamp, and an evidence screenshot path.
+- Use OCR for image-only ads; detect logos, phone numbers, prices, and coded language.
+- Deduplicate by listing identity but log every observation.
+- Classify each candidate as explicit_service / likely_service / mixed_or_parts / irrelevant_or_unclear, with confidence and evidence. Never silently drop uncertain image-only results.
+- Keep running until the two-hour window ends. Do not stop early.
+- At the end, print counts by classification, search terms tried, new ads recorded, evidence paths, and any device/UI errors.
+
+Do not claim an ad was found without actual on-device evidence.
